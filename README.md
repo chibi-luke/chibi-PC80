@@ -11,3 +11,5 @@ The chibi pc-80 will be a Z80-based microcomputer with an advanced I/O system, b
 - It will use a full 64k I/O space, using the upper 8 bits as a Device ID and the lower eight bits as a device address.  This creates 256 I/O devices with 256 addresses each.  No computer will ever have this many slots, and no card will need that many addresses, this is done for ease of programming only. This way, the device ID can be left in the upper address register, while the device address register is updated. 
 
 - The graphics system will be more advanced than most homebrew computer projects. It will have a custom TTL logic graphics card that will be able to display 320x200 in 256 colours over VGA. There will be 64k of double-buffered VRAM, interfaced via commands. These commands will include an auto-increment function, allowing entire bitmaps to be copied with ease. It will also have a text mode, utilizing bitmap copy from the character ROM.
+
+- OS as of now is undetermined. [FUZIX](https://github.com/EtchedPixels/FUZIX) is a viable option, but it is designed to run off of a banked ROM, not a mass storage device. A fully custom kernel would be possible, but a lot of work.
